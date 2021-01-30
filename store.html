@@ -35,16 +35,13 @@
             <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
                 <div class="mr-1"><img class="rounded" src="https://i.imgur.com/XiFJkhI.jpg" width="70"></div>
                 <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">Basic T-shirt</span>
-                    <div class="d-flex flex-row product-desc">
-                        <div class="size mr-1"><span class="text-grey">Size:</span><span class="font-weight-bold">&nbsp;M</span></div>
-                        <div class="color"><span class="text-grey">Color:</span><span class="font-weight-bold">&nbsp;Grey</span></div>
-                    </div>
                 </div>
                 <div class="d-flex flex-row align-items-center qty">Quantity : 
-                   <input id="qty" type="quantity" name="qty">
+                   <input id="qty" type="number" name="qty">
                 </div>
                 <div>
-                    <input type="text" disabled="" id="price" name="price" style="border: none;" value="200">
+                	 <input type="text" hidden="" id="bprice" name="price" style="border: none;" value="200">
+                    <h5 id="price" class="text-grey">Rs.200</h5>
                 </div>
                 <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
             </div>
@@ -80,11 +77,13 @@
 </div>
 <script type="text/javascript">
 	$("#qty").keyup(function(){
-		var bprice = $("#price").val();
-  		var price = $("#price").val();
+  		var price = $("#bprice").val();
   		var qty = $("#qty").val();
   		var final = qty*price;
-  		$("#price").val(final);
+  		$("#price").html("Rs."+final);
+  		if(qty == ""){
+  			$("#price").html("Rs."+price);
+  		}
 	}); 
 </script>
 </body>
