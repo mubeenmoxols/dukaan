@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Dukaan</title>
@@ -11,7 +11,6 @@
 
 
 <body>
-<div class="container-fluid bgc">
 	<header class="header mx-auto fixed-top bgc">
 	<div class="row justify-content-md-center">
 		<div class="col-md-1"></div>
@@ -32,7 +31,7 @@
 	
 	<div class="row">
 	<?php foreach ($categories as $category): ?>	
-				<div  class="card col-md-6 bordpd">
+				<div  class="card col-md-6 bordpd" style=" border-radius: 8% ">
   					<img src="<?php echo $category['img'] ?>" class="card-img-top" alt="...">
   					<div class="card-body">
     					<h3 class="card-title"><center><?php echo $category['name'] ?></center></h3>
@@ -73,6 +72,6 @@
 	</div>
 </footer>
 	</div>
-</div>
+
 </body>
 </html>
