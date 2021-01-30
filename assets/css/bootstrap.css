@@ -51,7 +51,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #eee;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -604,6 +604,7 @@ progress {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+  background-color: #ccc;
 }
 
 @media (min-width: 576px) {

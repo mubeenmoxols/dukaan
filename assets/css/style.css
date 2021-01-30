@@ -1,0 +1,60 @@
+
+.bordpd{
+		border-color: #eee;
+		border-width: 20px;
+	}
+.bgc{
+		background-color: #eee;
+	}
+.header{
+	padding-top: 2.5%;
+	padding-bottom: 1%;
+}
+.cnmargin{ 
+	padding-top: 7%;
+	padding-bottom: 100%;
+}
+
+.searchbar{
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	width: 100%;
+}
+
+.size span {
+    font-size: 11px
+}
+
+.color span {
+    font-size: 11px
+}
+
+.product-deta {
+    margin-right: 70px
+}
+
+.gift-card:focus {
+    box-shadow: none
+}
+
+.pay-button {
+    color: #fff
+}
+
+.pay-button:hover {
+    color: #fff
+}
+
+.pay-button:focus {
+    color: #fff;
+    box-shadow: none
+}
+
+.text-grey {
+    color: #a39f9f
+}
+
+.qty i {
+    font-size: 11px
+}
