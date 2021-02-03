@@ -5,6 +5,8 @@ class Home extends CI_Controller
 	public function home(){
 		$this->load->model('MainModel');
 		$data['categories'] = $this->MainModel->getCategories();
-		$this->load->view('cart',$data);
+		$this->load->view('home',$data);
 	}
+
+	
 }

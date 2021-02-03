@@ -20,10 +20,24 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		// $this->load->model('MainModel');
-		// $data['categories'] = $this->MainModel->getCategories();
-		// $this->load->view('home',$data);
-
-		$this->load->view('store');
+		$this->load->helper('url');
+		$this->load->model('MainModel');
+		$data['categories'] = $this->MainModel->getCategories();
+		$this->load->view('home',$data);
 	}
+	public function store()
+	{
+		$this->load->helper('url');
+		$this->load->model('MainModel');
+		$data['categories'] = $this->MainModel->getCategories();
+		$this->load->view('store',$data);
+	}
+	public function cart()
+	{
+		$this->load->helper('url');
+		$this->load->model('MainModel');
+		$data['categories'] = $this->MainModel->getCategories();
+		$this->load->view('cart',$data);
+	}
+
 }
